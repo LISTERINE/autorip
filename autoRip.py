@@ -90,6 +90,7 @@ if __name__ == "__main__":
         dvdDriveLetter = config.get("setup", "driveletter")
         movieDir = config.get("setup", "moviefolder")
         movieExtension = config.get("setup", "outputextension")
+        HBpath = config.get("setup", "pathtohandbreak")
     except Exception as e:
             print "------------------------------\n"
             print "Error while parsing config. Are you sure the config file is present in the directory?\n"
@@ -101,8 +102,7 @@ if __name__ == "__main__":
     driveLetter = dvdDriveLetter
     movieDirectory = movieDir
     preset = "High Profile"
-    ripCommand = ["C:\Program Files\Handbrake\HandBrakeCLI.exe", \
-                  "-i", "", "-o", "", "--preset=", ""]
+    ripCommand = [HBpath, "-i", "", "-o", "", "--preset=", ""]
     password = getpass("Please enter your gmail password: ")
     sender = Messenger(phone, username, password)
     set_power(0)

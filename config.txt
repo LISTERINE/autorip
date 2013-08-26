@@ -4,3 +4,4 @@ phoneaddress=123-456-7890@provider.textdomain.tld
 driveletter=D:
 moviefolder=C:\\Users\\username\\Desktop\\Movies\\
 outputextension=.mp4
+pathtohandbreak=C:\HandBrakeCLI.exe
